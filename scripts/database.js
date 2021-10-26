@@ -2,73 +2,89 @@ const database = {
    colors: [
         {
             id: 1,
-            color: "Silver"
+            color: "Silver",
+            price: 50
         },
         {
             id: 2,
-            color: "Midnight Blue"
+            color: "Midnight Blue",
+            price: 100
         },
         {
             id: 3,
-            color: "Firebrick Red"
+            color: "Firebrick Red",
+            price: 200
         },
         {
             id: 4,
-            color: "Spring Green"
+            color: "Spring Green",
+            price: 1000
         } 
     ],
     interiors: [
         {
             id: 1,
-            intPackage: "Beige Fabric"
+            intPackage: "Beige Fabric",
+            price: 150
         },
         {
             id: 2,
-            intPackage: "Charcoal Fabric"
+            intPackage: "Charcoal Fabric",
+            price: 150
         },
         {
             id: 3,
-            intPackage: "White Leather"
+            intPackage: "White Leather",
+            price: 175
         },
         {
             id: 4,
-            intPackage: "Black Leather"
+            intPackage: "Black Leather",
+            price: 525
         }
     ],
     techPackage: [
         {
             id: 1,
-            tech: "Basic Package"
+            tech: "Basic Package",
+            price: 432
         },
         {
             id: 2,
-            tech: "Navigation Package"
+            tech: "Navigation Package",
+            price: 837
         },
         {
             id: 3,
-            tech: "Visibility Package"
+            tech: "Visibility Package",
+            price: 142
         },
         {
             id: 4,
-            tech: "Ultra Package"
+            tech: "Ultra Package",
+            price: 435
         }
     ],
     wheels: [
         {
             id: 1,
-            type: "17-inch Pair"
+            type: "17-inch Pair",
+            price: 23
         },
         {
             id: 2,
-            type: "17-inch Pair Black"
+            type: "17-inch Pair Black",
+            price: 5325
         },
         {
             id: 3,
-            type: "18-inch Pair Spoke Silver"
+            type: "18-inch Pair Spoke Silver",
+            price: 1504
         },
         {
             id: 4,
-            type: "18-inch Pair Spoke Black"
+            type: "18-inch Pair Spoke Black",
+            price: 245
         }
     ],
     customOrders: [
@@ -99,7 +115,7 @@ export const getTech = () => {
 }
 
 export const getWheels = () => {
-    return database.wheels.map(color => ({...color}))
+    return database.wheels.map(wheel => ({...wheel}))
 }
 
 export const getOrders = () => {
@@ -119,7 +135,7 @@ export const setTech = (id) => {
 }
 
 export const setWheels = (id) => {
-    database.packageBuilder.wheelsId = id
+    database.packageBuilder.wheelId = id
 }
 
 export const addOrder = () => {

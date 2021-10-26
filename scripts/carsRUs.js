@@ -32,8 +32,8 @@ export const carsRUs = () => {
         <h2>Car Package Orders</h2>
         </article>
         
-        ${packageOrder()}
         
+        ${packageOrder()}
         `
 
 
